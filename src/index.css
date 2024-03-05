@@ -6,7 +6,6 @@
   margin: 0px;
   padding: 0px;
 }
-
 @font-face {
   font-family: "IRANYekan";
   src: url("../src/assets/fonts/IRANYekan/IRANYekanX-Thin.woff2")
@@ -94,4 +93,7 @@
     background-clip: text;
     font-weight: 800;
     font-size: 32px;
+}
+.workspaces_project_box{
+  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.2);
 }
