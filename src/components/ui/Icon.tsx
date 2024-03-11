@@ -247,6 +247,64 @@ const iconMap = {
       />
     </svg>
   ),
+  User: ({ ...rest }) => (
+    <svg
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="#323232"
+    xmlns="http://www.w3.org/2000/svg"
+    {...rest}
+  >
+    <path
+      d="M15 5.2C16.7 6.9 16.7 9.6 15 11.2C13.3 12.8 10.6 12.9 8.99999 11.2C7.39999 9.5 7.29999 6.8 8.99999 5.2C10.7 3.6 13.3 3.6 15 5.2"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M4 20C4 17.5 6 15.5 8.5 15.5H11.1"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M14 21H16.3L19.7 17.6C20.1 17.2 20.1 16.6 19.7 16.2L18.8 15.3C18.4 14.9 17.8 14.9 17.4 15.3L14 18.7V21V21H14Z"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+  ),
+
+  AddUser: ({ ...rest }) => (
+    <svg
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="#323232"
+    xmlns="http://www.w3.org/2000/svg"
+    {...rest}
+  >
+    <path
+      d="M15 14v-3m0 0v3m0 0h3m-3 0h-3m4-10v4m0-4H11m3 4c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3z"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+  ),
+
   Comment: ({ ...rest }) => (
     <svg
       width="24"
@@ -1372,6 +1430,33 @@ const iconMap = {
       />
     </svg>
   ),
+  Email : ({...rest}) => (
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="#C9CBDA" 
+      xmlns="http://www.w3.org/2000/svg"
+      {...rest}
+    >
+      <path
+        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M22,6 12,13 2,6"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  ),
+  
+  
+  
 };
 
 interface IconProps extends React.SVGProps<SVGSVGElement> {
