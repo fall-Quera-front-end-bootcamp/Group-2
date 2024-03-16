@@ -15,7 +15,7 @@ const useProjects = () => {
       .then((res) => setProjects(res.data))
       .catch((error) => setError(error))
       .finally(() => setIsLoading(false));
-
+      
 }
 
   return { projects, error, isLoading , getProjects};

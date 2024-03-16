@@ -8,6 +8,7 @@ import PrivateRoutes from "./PrivateRoutes";
 import UsersPage from "../pages/UsersPage";
 import ResetPage from "../pages/ResetPage/ResetPage";
 import { BoardPage } from "../pages/BoardPage/BoardPage";
+import Workspaces from "../components/Workspaces/Workspaces";
 
 
 const router = createBrowserRouter([
@@ -29,6 +30,7 @@ const router = createBrowserRouter([
     children: [
       { path: "users", element: <UsersPage /> },
       { path: "board", element: <BoardPage /> },
+      {path:"workspaces",element:<Workspaces />}
     ],
     
   },
