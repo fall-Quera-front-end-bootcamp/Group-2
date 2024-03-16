@@ -281,28 +281,32 @@ const iconMap = {
   ),
 
   AddUser: ({ ...rest }) => (
-    <svg
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="#323232"
+    <svg 
+    width="20" 
+    height="21" 
+    viewBox="0 0 20 21" 
+    fill="none" 
+    stroke="#C1C1C1"
     xmlns="http://www.w3.org/2000/svg"
     {...rest}
-  >
-    <path
-      d="M15 14v-3m0 0v3m0 0h3m-3 0h-3m4-10v4m0-4H11m3 4c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3z"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
+    >
+    <path d="M12.5 4.8335C13.9167 6.25016 13.9167 8.50016 12.5 9.8335C11.0833 11.1668 8.83333 11.2502 7.49999 9.8335C6.16666 8.41683 6.08333 6.16683 7.49999 4.8335C8.91666 3.50016 11.0833 3.50016 12.5 4.8335" stroke="#C1C1C1" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M3.33325 17.1665C3.33325 15.0832 4.99992 13.4165 7.08325 13.4165H9.24992"  
+    stroke-width="1.25" 
+    stroke-linecap="round" 
+    stroke-linejoin="round"
     />
-    <path
-      d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
+    <path d="M14.5834 17.5832V13.4165"  
+    stroke-width="1.25" 
+    stroke-linecap="round" 
+    stroke-linejoin="round"
     />
-  </svg>
+    <path d="M12.5 15.5002H16.6667"  
+    stroke-width="1.25" 
+    stroke-linecap="round" 
+    stroke-linejoin="round"
+    />
+    </svg>
   ),
 
   Comment: ({ ...rest }) => (
@@ -1431,32 +1435,22 @@ const iconMap = {
     </svg>
   ),
   Email : ({...rest}) => (
-    <svg
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="#C9CBDA" 
-      xmlns="http://www.w3.org/2000/svg"
-      {...rest}
+    <svg 
+    width="20" 
+    height="20" 
+    viewBox="0 0 20 20" 
+    fill="none" 
+    stroke="#C9CBDA"
+    xmlns="http://www.w3.org/2000/svg"
+    {...rest}
     >
-      <path
-        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M22,6 12,13 2,6"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
+    <path d="M14 10C14 12.209 12.209 14 10 14C7.791 14 6 12.209 6 10C6 7.791 7.791 6 10 6V6C12.209 6 14 7.791 14 10V11.5C14 12.881 15.119 14 16.5 14C17.881 14 19 12.881 19 11.5V10C19 5.029 14.971 1 10 1C5.029 1 1 5.029 1 10C1 14.971 5.029 19 10 19C11.149 19 12.317 18.782 13.444 18.315C14.052 18.063 14.614 17.747 15.133 17.386"  
+    stroke-width="1.5" 
+    stroke-linecap="round" 
+    stroke-linejoin="round"
+    />
     </svg>
   ),
-  
-  
-  
 };
 
 interface IconProps extends React.SVGProps<SVGSVGElement> {
