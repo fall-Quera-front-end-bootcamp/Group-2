@@ -1,23 +1,18 @@
-import React, { useState } from 'react';
+import { RegisterOptions, UseFormRegister } from "react-hook-form";
 
 interface IInputInviteProps {
+  register?: UseFormRegister<any>;
+  options?: RegisterOptions;
   onClick: () => void;
-  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  onChange?: () => void;
 }
 
 export const InputInvite = ({
+  options,
   onChange,
+  register,
   onClick,
 }: IInputInviteProps) => {
-  const [email, setEmail] = useState('');
-
-  const handleOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setEmail(e.target.value);
-    if (onChange) {
-      onChange(e);
-    }
-  };
-
   return (
     <div className="flex flex-row w-full items-center">
       <button
@@ -30,11 +25,11 @@ export const InputInvite = ({
       <input
         id="emailInvite"
         type="email"
-        value={email}
-        onChange={handleOnChange}
+        onChange={onChange}
         placeholder=" دعوت با ایمیل "
         className="bg-gray-secondary rounded-tr-md rounded-br-md p-xs my-xs w-full h-[40px] text-right"
-      />
+        {...(register !== undefined && { ...register("emailInvite", options) })}
+      ></input>
     </div>
   );
-}
+};

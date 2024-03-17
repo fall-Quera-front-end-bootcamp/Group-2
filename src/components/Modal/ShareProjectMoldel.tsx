@@ -36,10 +36,12 @@ const ShareProjectModal = ({ onClose, userPermission }: IShareModal) => {
   return (
     <>
       {isOpen && (
-        <div   className="w-[470px] absolute top-1598px left-429px p-20 rounded-3xl bg-white drop-shadow-2xl share-project-modal gap-40">
+        <div   className="w-[470px] absoulte inset-0 mx-auto mt-[150px] bg-white rounded-3xl drop-shadow-2xl p-[20px]">
           <div className="flex flex-col gap-m">
             <div className="w-full flex flex-row-reverse justify-start items-center mb-s gap-[80px]">
-              <Icon iconName="Close" className="text-gray-darker cursor-pointer" onClick={handleClose} />
+              <Icon iconName="Close" 
+                    className="text-gray-darker cursor-pointer"
+                    onClick={handleClose} />
               <h3 className="font-iranyekan text-[24px]">به اشتراک گذاری پروژه</h3>
             </div>
             <InputInvite onClick={() => {}} />
