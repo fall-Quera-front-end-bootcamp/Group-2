@@ -1,5 +1,6 @@
-import  { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import Icon from "../../../../ui/Icon";
+import { useSpring, animated } from '@react-spring/web';
 
 interface Props {
   onClose: () => void;
@@ -26,13 +27,24 @@ const Modal = ({ onClose }: Props) => {
     return () => document.removeEventListener('mousedown', handleClickAway);
   }, [onClose]);
 
+  const animation = useSpring({
+    opacity: isOpen ? 1 : 0,
+    transform: isOpen ? `translateY(0)` : `translateY(-100px)`,
+    config: {
+      tension: 210,
+      friction: 20
+    }
+  });
+
   const email = 'sararahmani@gmail.com';
   const username = email.split('@')[0];
   const initials = getInitials(username);
 
   return (
     isOpen && (
-      <div className="flex items-center justify-center">
+      <animated.div 
+       style={animation} 
+       className="flex items-center justify-center">
         <div
           ref={ref}
           className="w-[462px] h-[343px] bg-white p-s rounded-xl flex flex-col items-center">
@@ -98,7 +110,7 @@ const Modal = ({ onClose }: Props) => {
             </div>
           </div>
         </div>
-      </div>
+      </animated.div>
     )
   );
 };
